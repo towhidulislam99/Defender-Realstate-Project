@@ -391,4 +391,19 @@ $('.fade-in-section').each(function() {
   });
 });
 
+//=========================================================================
+//Towhid Modification Code Start Here
+// Function to toggle dropdown menu
+// scripts.js
+document.addEventListener('DOMContentLoaded', function () {
+  var navbarToggler = document.getElementById('navbar-toggler');
+  var navbarCollapse = document.getElementById('navbarDefault');
 
+  navbarToggler.addEventListener('click', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    } else {
+      navbarCollapse.classList.add('show');
+    }
+  });
+});
